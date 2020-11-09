@@ -151,38 +151,67 @@ body {
                 font-size: 0.75rem;
             }
         }
-    }
-    > footer {
-        background-color: $color-grey;
-    }
-}
-
-.food-menu-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0.25rem;
-    margin: 5px;
-
-    > .item {
-        background-color: $green-flag;
-        color: white;
-        > .image {
-            height: 200px;
-            background-size: cover;
-            background-position: center center;
-        }
-
-        > .name, .description, .prices {
-            font-size: .75rem;
-        }
-        > .description {
+        .food-menu-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0.25rem;
             margin: 5px;
-        }
-        >.prices {
-            font-size: .60rem;
+
+            > .item {
+                background-color: $green-flag;
+                color: white;
+                > .image {
+                    height: 200px;
+                    background-size: cover;
+                    background-position: center center;
+                }
+
+                > .name,
+                .description,
+                .prices {
+                    font-size: 0.75rem;
+                }
+                > .description {
+                    margin: 5px;
+                }
+                > .prices {
+                    font-size: 0.6rem;
+                }
+            }
         }
     }
+
+    // > footer {
+    //     background-color: $color-grey;
+    // }
 }
+
+// .food-menu-wrapper {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-gap: 0.25rem;
+//     margin: 5px;
+
+//     > .item {
+//         background-color: $green-flag;
+//         color: white;
+//         > .image {
+//             height: 200px;
+//             background-size: cover;
+//             background-position: center center;
+//         }
+
+//         > .name, .description, .prices {
+//             font-size: .75rem;
+//         }
+//         > .description {
+//             margin: 5px;
+//         }
+//         >.prices {
+//             font-size: .60rem;
+//         }
+//     }
+// }
 
 @media only screen and (min-width: 768px) {
     .layout-wrapper header {
@@ -216,12 +245,4 @@ body {
     .food-menu-wrapper {
         grid-template-columns: repeat(4, 1fr);
     }
-}
-
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// FOOTER
-
-footer {
-    background-color: $red-logo;
-    color: $red-logo;
 }
